@@ -1,10 +1,11 @@
 import GlobalStyles, { Container } from './assets/styles/GlobalStyles';
-import { Home } from './components';
+import { Home, Uploading } from './components';
 
 function App() {
   return (
     <Container>
-      <Home />
+      {/* <Home /> */}
+      <Uploading />
       <GlobalStyles />
     </Container>
   );
