@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: min(40rem, 60%);
+  width: min(40rem, 90%);
 
   display: flex;
   flex-direction: column;
@@ -81,7 +81,8 @@ export const CopyButton = styled.button`
   background: #2f80ed;
   border-radius: 0.8rem;
   height: 100%;
-  width: 30%;
+  width: 40%;
+  min-width: 9rem;
 
   padding: 0.9rem 1.8rem;
 
