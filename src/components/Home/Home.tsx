@@ -1,7 +1,8 @@
+/* eslint-disable no-console */
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable no-nested-ternary */
-import React, { useState, DragEvent, useEffect } from 'react';
+import React, { useState, DragEvent } from 'react';
 
 import {
   Container,
