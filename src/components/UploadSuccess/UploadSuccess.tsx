@@ -10,15 +10,13 @@ import {
   CopyButton,
 } from './UploadSuccess.styles';
 
-const UploadSuccess: React.FC = () => (
+const UploadSuccess: React.FC<{ url: string }> = ({ url }) => (
   <Container>
     <Icon className='material-icons'>check_circle</Icon>
     <MessageSuccess>Upload Successfully!</MessageSuccess>
-    <Img src='https://cdn.discordapp.com/attachments/833777374445174807/979520880554172426/unknown.png' />
+    <Img src={url} />
     <LinkImg>
-      <Url>
-        https://cdn.discordapp.com/attachments/833777374445174807/979520880554172426/unknown.png
-      </Url>
+      <Url>{url}</Url>
       <CopyButton>
         <p>Copy Link</p>
       </CopyButton>

@@ -43,7 +43,8 @@ export const Description = styled.p`
 
   margin-bottom: 3rem;
 `;
-export const DragDrop = styled.div`
+
+export const DragDrop = styled.div<{ isOverhead: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,8 +53,8 @@ export const DragDrop = styled.div`
   width: 100%;
   height: 50%;
 
-  background: #f6f8fb;
-  border: 1px dashed #97bef4;
+  background: ${(props) => (props.isOverhead ? '#fff' : '#f6f8fb')};
+  border: 1px dashed ${(props) => (props.isOverhead ? '#2f80ed' : '#97bef4')};
   border-radius: 1.2rem;
 `;
 export const Icon = styled.img`
